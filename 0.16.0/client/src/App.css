@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.appTitle {
+  margin: 0;
+  color: #fff;
+  background-color: #000;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.125rem;
+}
