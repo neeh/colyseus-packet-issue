@@ -20,7 +20,8 @@ export default config({
     // const server = http.createServer(app);
     const credentials = {
       key: fs.readFileSync(path.join(import.meta.dirname, '../../../certificates/dev_key.pem')),
-      cert: fs.readFileSync(path.join(import.meta.dirname, '../../../certificates/dev.pem'))
+      cert: fs.readFileSync(path.join(import.meta.dirname, '../../../certificates/dev.pem')),
+      ca: fs.readFileSync(path.join(import.meta.dirname, '../../../certificates/dev_ca.pem'))
     };
     const server = https.createServer(credentials, app);
     const transport = new WebSocketTransport({ server });
