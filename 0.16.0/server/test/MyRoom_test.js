@@ -39,7 +39,7 @@ describe("testing your Colyseus app", () => {
     const client2 = new Client(endpoint);
     // const roomClient2 = await colyseus.connectTo(room);
     const roomClient2 = await client2.joinById(roomId);
-    roomClient1.onMessage('P', data => {});
+    roomClient2.onMessage('P', data => {});
 
     await new Promise((resolve, reject) => {
       setTimeout(() => {
